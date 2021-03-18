@@ -1,0 +1,258 @@
+#variable-depth-display{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28pt;
+  font-weight: 600;
+  text-align: right;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.5);
+  width: 140px;
+}
+
+#depth-profile-title {
+  text-align: center;
+}
+
+.subtitle{
+  font-weight: 400;
+  font-size: 12pt;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.subtitle-large{
+  font-weight: 550;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#distance-subtitle{
+  padding-bottom: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#titleDiv {
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  /* background-color: rgba(220,220,220,1);
+  color: white; */
+}
+#titleText {
+  font-size: 32pt;
+  font-weight: 700;
+  padding: 10px 5px 10px 5px;
+}
+
+#dataDescription {
+  font-size: 12pt;
+  padding: 10px 5px 0px 5px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* Avoids flashing the hardcoded html if a
+  mobile device is used to view the app */
+  visibility: hidden;
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  left: 335px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  /* width: 100%; */
+}
+
+#depthSliderContainer{
+  height: 150px;
+}
+
+#chartContainer {
+  height: 375px;
+  z-index: 96;
+}
+
+#options {
+  border-style: solid;
+  border-color: #323232;
+  width: 335px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  height: 100%;
+}
+
+#containerDiv {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0;
+}
+#bufferSliderContainer{
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+#histogram {
+  /* width: 500px; */
+  height: 200px;
+}
+
+calcite-radio-group {
+  flex-direction: column;
+}
+
+.esri-ui-corner .esri-expand .esri-widget--panel, .esri-ui-corner .esri-expand .esri-widget--panel-height-only, .esri-ui-corner .esri-component .esri-widget--panel, .esri-ui-corner .esri-component.esri-widget--panel {
+  max-width: 220px;
+}
+
+.labels {
+  padding: 5px;
+}
+
+.esri-button {
+  margin: 4px;
+  font-family: "Avenir Next W00","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+  color: #6a6a6a;
+}
+
+.options-top {
+  height: 180px;
+}
+
+#variable-display{
+  visibility: hidden;
+  height: 0;
+}
+
+.options-top-right {
+  float: right;
+}
+
+.options-top-left {
+  float: left;
+  width: 80%;
+}
+
+.options-bottom {
+  margin-top: 5px;
+  height: 375px;
+  width: 300px;
+  z-index: 96;
+}
+
+#input-options{
+  padding-bottom: 5px;
+}
+
+.mobile-message {
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  left: 10px;
+}
+
+/* Loading icon */
+
+#loading-control {
+  filter: drop-shadow(0 0 10px #e6550d);
+  position: absolute;
+  z-index: 99;
+  top: 40%;
+  left: 55%;
+  width: 120px;
+  height: 165px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: -40px 0 0 -125px;
+  background-color: rgba(255,255,255,1);
+  /* color: #323232; */
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e6550d;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
